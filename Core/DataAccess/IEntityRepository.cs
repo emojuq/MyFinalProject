@@ -1,11 +1,14 @@
-﻿using Entities.Abstract;
+﻿
+using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace DataAccess.Abstract
-{
+namespace Core.DataAccess
+{   //namespace'i değiştirerek Core.DataAccess yaptık ve DataAccess'teki IEntityRepository'i Core projesine taşıdık. yani kes yapıştır olayı.
+    //Core katmanı evrensel katmanımızdır.
+    //Core katmanı diğer katmanları referans almaz. yukarıdaki using entities.abstractı sil ve ıentity'de üzerine gelerek using de.
    public interface IEntityRepository<T> where T:class,IEntity,new()
     {
         // class : referans tip olabilir demek.

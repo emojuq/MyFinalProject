@@ -1,11 +1,12 @@
-﻿using Entities.Abstract;
+﻿
+using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Entities.Concrete
 {
-    public class Product:IEntity
+    public class Product:IEntity //using abstractı sil,entities projesine sağ tıkla project reference'ı seç core'a tıkla ve IEntity' üstüne tıkla using de
     {
          //Projede ilk burayı yaptık.
         public int ProductId { get; set; }

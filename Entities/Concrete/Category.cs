@@ -1,4 +1,5 @@
-﻿using Entities.Abstract;
+﻿using Core.Entities;
+
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -6,6 +7,7 @@ using System.Text;
 namespace Entities.Concrete
 {
     //Çıplak Class Kalmasın eğer kalırsa ileride sıkıntı yaşarız.
+    //core'dan sonra using abstract'ı sil.
 
     public class Category:IEntity
     {   
